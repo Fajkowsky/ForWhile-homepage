@@ -1,4 +1,6 @@
-# Django settings for main project.
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__) + '../../../')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -69,9 +71,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR, 'static/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'ca9uie28zf&(7p8xj^n_!ywe_il!#ho#nt_6=rpb1q%-(k8*(2'
+SECRET_KEY = '48&%)0y#2k%+=n-=*@$oi@7%(-9s0p!p7qcetcz@3k_v_@d3(w'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -108,9 +108,7 @@ ROOT_URLCONF = 'main.urls'
 WSGI_APPLICATION = 'main.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR, 'templates/'),
 )
 
 INSTALLED_APPS = (
