@@ -2,17 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
 from form import ContactForm
+from models import ContactModel
 
 def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            print "dziala"
+            cd = form.cleaned_data
+            # ContactModel.objects.create(email=cd['mail'])
             return HttpResponseRedirect('/thanks/')
-        else:
-            print "cos nie dziala"       
     else:
-        print "tutaj cos nie dziala"
         form = ContactForm()
 
     return render(request, 'base.html', {'form': form,})
