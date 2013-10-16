@@ -9,7 +9,7 @@ def home(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            # ContactModel.objects.create(email=cd['mail'])
+            ContactModel.objects.create(email=cd['mail'])
             return HttpResponseRedirect('/thanks/')
     else:
         form = ContactForm()
