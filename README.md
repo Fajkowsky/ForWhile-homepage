@@ -1,6 +1,7 @@
-Heroku Django BasicApp
+ForWhile basic page
 =====
-This is simplest django webapplication with working out of box for heroku service. 
+Simple maina page for forwhile.
+!(Base)[https://raw.githubusercontent.com/Fajkowsky/ForWhile-homepage/master/static/img/screenshot_1.png]
 
 Deployment
 ----------
@@ -28,25 +29,3 @@ If you want run this on local machine you should have installed heroku-toolbelt 
  or
 
         $ foreman start
-
-
-### Heroku
-
-If you want run this on heroku you must have account there.
-
-1. Login to heroku
-
-        $ heroku login
-
-2. Create app:
-
-        $ heroku create
-
-3. Push to heroku server:
-
-        $ git push heroku master
-
-3. Open in browser:
-
-        $ heroku open
-
