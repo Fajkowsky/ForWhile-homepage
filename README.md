@@ -1,7 +1,7 @@
 ForWhile basic page
 =====
 Simple maina page for forwhile.
-!(Base)[https://raw.githubusercontent.com/Fajkowsky/ForWhile-homepage/master/static/img/screenshot_1.png]
+![Base](https://raw.githubusercontent.com/Fajkowsky/ForWhile-homepage/master/static/img/screenshot_1.png)
 
 Deployment
 ----------
