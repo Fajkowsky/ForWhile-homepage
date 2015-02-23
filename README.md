@@ -1,6 +1,6 @@
 ForWhile basic page
 =====
-Simple maina page for forwhile.
+Simple main page with form for subcribe for forwhile .
 ![Base](https://raw.githubusercontent.com/Fajkowsky/ForWhile-homepage/master/static/img/screenshot_1.png)
 
 Deployment
